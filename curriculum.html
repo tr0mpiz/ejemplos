@@ -1,112 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-</head>
-<body>
-    <div class="main-nav">
-        <div class="container">
-            <header>
-                <div class="navigation-toggle">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CURRICULUM</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+        <style>
+            .lista {
+                font-size: 24px;
+            }
+            .expe {
+                padding: 2rem;
+                max-width: 40rem;
+            }
 
+            .fondo {
+                background-image: linear-gradient(to right, #9100ff, #67ff00);
+                padding-bottom: 2rem;
+            }
+            #accordion {
+                width: 38rem;
+                margin: auto;
+            }
+
+            #experiencia {
+                width: max-content;
+                margin: auto;
+            }
+            a {
+                text-decoration: none;
+                color: white;
+            }
+            .card {
+                border: none;
+                margin: 5px 0px;
+            }
+            .card-link {
+                color: black;
+            }
+            .card-body {
+                color: black;
+            }
+
+            h2 {
+                font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+                padding: 2rem;
+                text-decoration: underline;
+                font-size: 2.5rem;
+            }
+            .sub-tit {
+                font-size: 1.2rem;
+                text-decoration: underline;
+            }
+            .sub-tit-content {
+                font-size: 1rem;
+                font-style: oblique;
+            }
+        </style>
+    </head>
+    <body style="color: white">
+        <div class="fondo">
+            <div class="main-nav">
+                <div class="container">
+                    <header>
+                        <ul class="nav justify-content-center pt-4 pb-4">
+                            <li class="nav-item"><a class="nav-link active" href="#sobremi"> Sobre mi </a></li>
+                            <li class="nav-item"><a class="nav-link" href="#experiencia"> Experiencia</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#estudios">Estudios</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#aptitudes">Aptitudes</a></li>
+                        </ul>
+                    </header>
                 </div>
-                
-                    <ul class="nav justify-content-center pt-4 pb-4">
-                        <li class="nav-item"> <a class="nav-link active" href="#sobremi"> Sobre mi </a></li>
-                        <li class="nav-item"> <a class="nav-link" href="#experiencia"> Experiencia</a></li>
-                        <li class="nav-item"> <a class="nav-link" href="#estudios">Estudios</a> </li>
-                        <li class="nav-item"> <a class="nav-link" href="#aptitudes">Aptitudes</a> </li>
+            </div>
+
+            <div class="sobremi text-center col-auto p-5" id="sobremi">
+                <div class="container">
+                    <h2>Sobre mi</h2>
+
+                    <img class="card-img-top" src="https://randomuser.me/api/portraits/men/84.jpg" style="width: 120px" alt="cardamomo en pinta" />
+                    <h5>Ricardo Canaletti</h5>
+                    <p>Estoy estudiando cosmetologia en la UBA</p>
+                    <a href="www.google.com.ar" target="_blank">Portfolio</a>
+                </div>
+            </div>
+
+            <div class="experiencia text-center" id="experiencia">
+                <h2>Experiencia</h2>
+                <div class="expe">
+                    <ul class="experiencia-lista" style="font-size: larges">
+                        <li class="lista">Software Engineer - <a href="www.google.com.ar" target="_blank">Google</a></li>
+                        <li class="lista">ene. 2021 - actualidad · 2 años 3 meses</li>
+                        <li class="lista">Aptitudes: Bootstrap · PHP · MySQL · jQuery · Informix</li>
                     </ul>
-                
-            </header>
-        </div>
-    </div>
-
-    <div class="sobremi text-center" id="sobremi">
-        <h1>Sobre mi</h1>
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="https://randomuser.me/api/portraits/men/84.jpg" alt="cardamomo en pinta">
-            <div class="card-body">
-                <h5>Ricardo Canaletti</h5>
-                <p>Estoy estudiando cosmetologia en la UBA</p>
-                <a href="www.google.com.ar" target="_blank">Portfolio</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="experiencia text-center" id="experiencia">
-        <h1>Experiencia</h1>
-        <div class="container">
-            <ul class="experiencia-lista">
-                <li>2014 - 2020</li>
-                <li><a href="www.google.com.ar" target="_blank">Google</a></li>
-                <li>CTO</li>
-            </ul>
-        </div>
-    </div>
-     
-    <div class="estudios text-center" id="estudios">
-     
-
-        <h1>Estudios</h1>
-
-    </div>
-
-    <div class="aptitudes text-center" id="aptitudes">
-
-
-        <h1>Aptitudes</h1>
-        <div class=" text-center" id="accordion" style="width: 18rem;">
-            <!--//APTITUDES 1 -->
-            <div class="card">
-                <div class="card-header">
-                    <a class="card-link"
-                        data-toggle="collapse"
-                        href="#aptitudes1">
-                        APTITUDES 1
-                    </a>
                 </div>
-                <div id="aptitudes1"
-                    class="collapse "
-                    data-parent="#accordion">
-                    <div class="card-body">
-                        GeeksforGeeks is a computer
-                        science portal. It is the best
-                        platform to lean programming.
+                <div class="expe">
+                    <ul class="experiencia-lista" style="font-size: larges">
+                        <li class="lista">Software Engineer - <a href="www.google.com.ar" target="_blank">Google</a></li>
+                        <li class="lista">ene. 2021 - actualidad · 2 años 3 meses</li>
+                        <li class="lista">Aptitudes: Bootstrap · PHP · MySQL · jQuery · Informix</li>
+                    </ul>
+                </div>
+                <div class="expe">
+                    <ul class="experiencia-lista" style="font-size: larges">
+                        <li class="lista">Software Engineer - <a href="www.google.com.ar" target="_blank">Google</a></li>
+                        <li class="lista">ene.awda 2 años 3 meses</li>
+                        <li class="lista">Aptitudes: Bootstrap · PHP · MySQL · jQuery · Informix</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="estudios text-center" id="estudios">
+                <h2>Estudios</h2>
+                <div>
+                    <div class="sub-tit">INSTITUTO CARDAMOMO</div>
+                    <div class="sub-tit-content">Bachiller orientado en economía y gestión de las organizaciones.</div>
+                    <div class="sub-tit-content">2008-2012</div>
+                </div>
+
+                <div>
+                    <div class="sub-tit">UTN - FRGP</div>
+                    <div class="sub-tit-content">TSSI</div>
+                    <div class="sub-tit-content">2012-2020</div>
+                </div>
+
+                <div>
+                    <div class="sub-tit">CODDING HAUSE</div>
+                    <div class="sub-tit-content">UX/UI</div>
+                    <div class="sub-tit-content">2020-2022</div>
+                </div>
+            </div>
+
+            <div class="aptitudes text-center" id="aptitudes">
+                <h2>Aptitudes</h2>
+                <div class="text-center" id="accordion">
+                    <!--//APTITUDES 1 -->
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="card-link" data-toggle="collapse" href="#aptitudes1"> APTITUDES 1 </a>
+                        </div>
+                        <div id="aptitudes1" class="collapse" data-parent="#accordion">
+                            <div class="card-body">GeeksforGeeks is a computer science portal. It is the best platform to lean programming.</div>
+                        </div>
+                    </div>
+
+                    <!--//APTITUDES 2-->
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="card-link" data-toggle="collapse" href="#aptitudes2"> APTITUDES 2 </a>
+                        </div>
+                        <div id="aptitudes2" class="collapse" data-parent="#accordion">
+                            <div class="card-body">GeeksforGeeks is a computer science portal. It is the best platform to lean programming.</div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <!--//APTITUDES 2-->
-            <div class="card">
-                <div class="card-header">
-                    <a class="card-link"
-                        data-toggle="collapse"
-                        href="#aptitudes2">
-                        APTITUDES 2
-                    </a>
-                </div>
-                <div id="aptitudes2"
-                    class="collapse "
-                    data-parent="#accordion">
-                    <div class="card-body">
-                        GeeksforGeeks is a computer
-                        science portal. It is the best
-                        platform to lean programming.
-                    </div>
-                </div>
-            </div>
-
-
-
         </div>
-    </div>
-</body>
+    </body>
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </html>
